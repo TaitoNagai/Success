@@ -11,13 +11,13 @@ public class Stamina : MonoBehaviour
     private void Start()
     {
         //スライダー取得
+        GameObject ui = (GameObject)Resources.Load("");
         _slider = GameObject.Find("Slider").GetComponent<Slider>();
     }
 
     void Update()
     {
         // HP上昇
-        _hp += 0.01f;
         if (_hp > 1)
         {
             // 最大を超えたら0に戻す
