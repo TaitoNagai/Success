@@ -7,37 +7,37 @@ public class StatsButton : MonoBehaviour
     //ó˚èK
     public void Kinryoku()
     {
-        FindObjectOfType<StatsView>().Kinryoku();
+        FindObjectOfType<GameManager>().Kinryoku();
     }
     public void Dageki()
     {
-        FindObjectOfType<StatsView>().Dageki();
+        FindObjectOfType<GameManager>().Dageki();
     }
     public void Sourui()
     {
-        FindObjectOfType<StatsView>().Sourui();
+        FindObjectOfType<GameManager>().Sourui();
     }
     public void Syubi()
     {
-        FindObjectOfType<StatsView>().Syubi();
+        FindObjectOfType<GameManager>().Syubi();
     }
 
     //óVÇ—
     public void Fishing()
     {
-        FindObjectOfType<StatsView>().Fishing();
+        FindObjectOfType<GameManager>().Fishing();
     }
     public void Golf()
     {
-        FindObjectOfType<StatsView>().Golf();
+        FindObjectOfType<GameManager>().Golf();
     }
     public void Game()
     {
-        FindObjectOfType<StatsView>().Game();
+        FindObjectOfType<GameManager>().Game();
     }
     public void Cafe()
     {
-        FindObjectOfType<StatsView>().Cafe();
+        FindObjectOfType<GameManager>().Cafe();
     }
 
     public void IntN()

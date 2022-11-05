@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Assets/Plugins/UniRx/
+Assets/Plugins.meta
+Assets/Plugins/UniRx.meta
