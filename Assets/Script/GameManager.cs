@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] StatsView _statsView = null;
     [SerializeField] Slider _staminaSlider = null;
-    public int _powerIndex { get => NowP; }
+    public int _powerIndex { get => _numP.Value; }
     public int _meetIndex { get => NowM; }
     public int _speedIndex { get => NowS; }
     public int _defenseIndex { get => NowD; }
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public int S;
     public int D;
 
-    public int NowP;
+    //public int NowP;
     public int NowM;
     public int NowS;
     public int NowD;
@@ -35,31 +35,37 @@ public class GameManager : MonoBehaviour
     public int _defenseNum = 5;
     public int _cafeNum = 3;
 
-    private void Start()
-    {
-        //èâä˙íl
-        NowP = 1;
-        NowM = 1;
-        NowS = 1;
-        NowD = 1;
+    ReactiveProperty<int> _numP = new ReactiveProperty<int>();
+    int _powerStats = 0;
 
-        //_staminaSlider.GetComponent<Slider>();
+    public GameManager(int _startPower, System.Action<int>action, GameObject gameObject)
+    {
+        _powerStats = _startPower;
+        _numP.Subscribe(action).AddTo(gameObject);
+        _numP.Value = _powerStats;
     }
-    //ó˚èKå¯â 
-    public void Kinryoku()
+    public void Kinryoku(int KPlus)
     {
-        NowP += _powerNum;
-        if (NowP >= 100)
-        {
-            NowP = 100;
-            _powerNum = 0;
-        }
+        _numP.Value = Mathf.Clamp(_numP.Value += KPlus, 0 , 100);
 
-        if (NowP == P)
+        if (_numP.Value == P)
         {
             IntN();
         }
     }
+
+    private void Start()
+    {
+        //èâä˙íl
+        //_numP.Value = 1;
+        //NowM = 1;
+        //NowS = 1;
+        //NowD = 1;
+
+        //_staminaSlider.GetComponent<Slider>();
+    }
+    //ó˚èKå¯â 
+    
     public void Dageki()
     {
         NowM += _meetNum;
@@ -106,14 +112,14 @@ public class GameManager : MonoBehaviour
     //óVÇ—å¯â 
     public void Fishing()
     {
-        NowP += _fishingNum;
-        if (NowP >= 100)
+        _numP.Value += _fishingNum;
+        if (_numP.Value >= 100)
         {
-            NowP = 100;
+            _numP.Value = 100;
             _fishingNum = 0;
         }
 
-        if (NowP == P)
+        if (_numP.Value == P)
         {
             IntN();
         }

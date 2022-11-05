@@ -4,10 +4,22 @@ using UnityEngine;
 
 public class StatsButton : MonoBehaviour
 {
-    //ó˚èK
-    public void Kinryoku()
+    [SerializeField] GameManager _gameManager;
+    [SerializeField] StatsView _statsView;
+    int power = 0;
+
+    private void Start()
     {
-        FindObjectOfType<GameManager>().Kinryoku();
+        ChangePower();
+    }
+    //ó˚èK
+    public void ChangePower()
+    {
+        _gameManager = new GameManager(power, x => { _statsView.ChangePowerText(x); },_statsView.gameObject);
+    }
+    public void Kinryoku(int KPlus)
+    {
+        _gameManager.Kinryoku(KPlus);
     }
     public void Dageki()
     {

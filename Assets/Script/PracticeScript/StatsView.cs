@@ -14,9 +14,15 @@ public class StatsView : MonoBehaviour
     [SerializeField] Text _speedText;
     [SerializeField] Text _defenseText;
 
+
+    public void ChangePowerText(int numPower)
+    {
+        _powerText.text = numPower.ToString();
+    }
+
     private void Update()
     {
-        _powerText.text = _gameManager._powerIndex.ToString();
+        //_powerText.text = _gameManager._powerIndex.ToString();
         _meetText.text = _gameManager._meetIndex.ToString();
         _speedText.text = _gameManager._speedIndex.ToString();
         _defenseText.text = _gameManager._defenseIndex.ToString();
