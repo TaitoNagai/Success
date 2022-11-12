@@ -4,56 +4,43 @@ using UnityEngine;
 
 public class StatsButton : MonoBehaviour
 {
-    [SerializeField] GameManager _gameManager;
+    StatsModel _statsModel = new StatsModel();
     [SerializeField] StatsView _statsView;
-    int power = 0;
+    int power = 1;
+    int meet = 1;
+    int speed = 1;
+    int defense = 1;
 
     private void Start()
     {
-        ChangePower();
+        ChangeStats();
     }
     //—ûK
-    public void ChangePower()
+    public void ChangeStats()
     {
-        _gameManager = new GameManager(power, x => { _statsView.ChangePowerText(x); },_statsView.gameObject);
-    }
-    public void Kinryoku(int KPlus)
-    {
-        _gameManager.Kinryoku(KPlus);
-    }
-    public void Dageki()
-    {
-        FindObjectOfType<GameManager>().Dageki();
-    }
-    public void Sourui()
-    {
-        FindObjectOfType<GameManager>().Sourui();
-    }
-    public void Syubi()
-    {
-        FindObjectOfType<GameManager>().Syubi();
+        _statsModel.Subscribe(0, p => { _statsView.ChangePowerText(p); }, _statsView.gameObject);
+        _statsModel.Subscribe(1, m => { _statsView.ChangeMeetText(m); }, _statsView.gameObject);
+        _statsModel.Subscribe(2, s => { _statsView.ChangeSpeedText(s); }, _statsView.gameObject);
+        _statsModel.Subscribe(3, d => { _statsView.ChangeDefenseText(d); }, _statsView.gameObject);
     }
 
-    //—V‚Ñ
-    public void Fishing()
+    public void Kinryoku(int PPlus)
     {
-        FindObjectOfType<GameManager>().Fishing();
-    }
-    public void Golf()
-    {
-        FindObjectOfType<GameManager>().Golf();
-    }
-    public void Game()
-    {
-        FindObjectOfType<GameManager>().Game();
-    }
-    public void Cafe()
-    {
-        FindObjectOfType<GameManager>().Cafe();
+        _statsModel.Kinryoku(PPlus);
     }
 
-    public void IntN()
+    public void Dageki(int MPlus)
     {
-        
+        _statsModel.Dageki(MPlus);
+    }
+
+    public void Sourui(int SPlus)
+    {
+        _statsModel.Sourui(SPlus);
+    }
+
+    public void Syubi(int DPlus)
+    {
+        _statsModel.Syubi(DPlus);
     }
 }

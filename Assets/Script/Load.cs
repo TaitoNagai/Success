@@ -27,7 +27,7 @@ public class Load : MonoBehaviour
                 Save NowNumber = (Save)bf.Deserialize(file);
                 // 読み込んだデータを反映。
                 var numberText = Instantiate(textPrefab) as Text;
-                NowNumber.GetComponent<GameManager>().Dageki();
+                //NowNumber.GetComponent<GameManager>().Dageki();
             }
             finally
             {

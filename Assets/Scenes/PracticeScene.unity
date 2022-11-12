@@ -474,6 +474,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 720630154996806607, guid: 7a8a91f4771c90e43a3093b84d4e09f0, type: 3}
   m_PrefabInstance: {fileID: 200712998}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &471600650 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 720630154996806604, guid: 7a8a91f4771c90e43a3093b84d4e09f0, type: 3}
+  m_PrefabInstance: {fileID: 200712998}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &500391205 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4773512372589965120, guid: 73c0f8a51c40e9742a9beceab08531ef, type: 3}
+  m_PrefabInstance: {fileID: 1740746147}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &612558200
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,8 +883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7db496d6c09e7459ab6aa9103f485b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 0}
-  _statsView: {fileID: 0}
+  _statsView: {fileID: 1604081279}
 --- !u!114 &923850626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,11 +931,11 @@ MonoBehaviour:
       - m_Target: {fileID: 923850625}
         m_TargetAssemblyTypeName: StatsButton, Assembly-CSharp
         m_MethodName: Sourui
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1094,8 +1115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7db496d6c09e7459ab6aa9103f485b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 0}
-  _statsView: {fileID: 0}
+  _statsView: {fileID: 1604081279}
 --- !u!114 &1099736423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1143,11 +1163,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1099736422}
         m_TargetAssemblyTypeName: StatsButton, Assembly-CSharp
         m_MethodName: Syubi
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1352,8 +1372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7db496d6c09e7459ab6aa9103f485b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 0}
-  _statsView: {fileID: 0}
+  _statsView: {fileID: 1604081279}
 --- !u!114 &1198328114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,11 +1420,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1198328113}
         m_TargetAssemblyTypeName: StatsButton, Assembly-CSharp
         m_MethodName: Dageki
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1538,7 +1557,7 @@ GameObject:
   - component: {fileID: 1427825028}
   - component: {fileID: 1427825027}
   - component: {fileID: 1427825026}
-  - component: {fileID: 1427825025}
+  - component: {fileID: 1427825029}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -1567,20 +1586,6 @@ RectTransform:
   m_AnchoredPosition: {x: -709, y: -376}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1427825025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427825023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb7db496d6c09e7459ab6aa9103f485b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameManager: {fileID: 1794982167}
-  _statsView: {fileID: 1604081279}
 --- !u!114 &1427825026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1625,14 +1630,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1427825025}
+      - m_Target: {fileID: 1427825029}
         m_TargetAssemblyTypeName: StatsButton, Assembly-CSharp
         m_MethodName: Kinryoku
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1675,6 +1680,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427825023}
   m_CullTransparentMesh: 1
+--- !u!114 &1427825029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427825023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7db496d6c09e7459ab6aa9103f485b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _statsView: {fileID: 1604081279}
 --- !u!1 &1488275283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,8 +2013,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1788933319}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1604081279
 MonoBehaviour:
@@ -2010,11 +2028,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828f3f1b7f53caf4081ec2b5ecceb29f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 1794982167}
-  _powerText: {fileID: 1810458367452556419, guid: dcdbe8a38b3adaf47ab42a8242a848ff, type: 3}
-  _meetText: {fileID: 720630154996806604, guid: 7a8a91f4771c90e43a3093b84d4e09f0, type: 3}
-  _speedText: {fileID: 8374064783382182434, guid: 8bae51de040e308468333e50e39f30c2, type: 3}
-  _defenseText: {fileID: 4773512372589965120, guid: 73c0f8a51c40e9742a9beceab08531ef, type: 3}
+  _powerText: {fileID: 2048474126}
+  _meetText: {fileID: 471600650}
+  _speedText: {fileID: 1641678476}
+  _defenseText: {fileID: 500391205}
 --- !u!1 &1614315227
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +2117,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8374064783382182433, guid: 8bae51de040e308468333e50e39f30c2, type: 3}
   m_PrefabInstance: {fileID: 1566884548}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1641678476 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8374064783382182434, guid: 8bae51de040e308468333e50e39f30c2, type: 3}
+  m_PrefabInstance: {fileID: 1566884548}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1676556211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,9 +2456,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1604081278}
-  - {fileID: 1794982166}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2443,7 +2469,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1794982166}
-  - component: {fileID: 1794982167}
   m_Layer: 0
   m_Name: System
   m_TagString: Untagged
@@ -2458,43 +2483,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794982165}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1788933319}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1794982167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794982165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3a4b2e91dea3c849bf9fdad20327d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _statsView: {fileID: 1604081279}
-  _staminaSlider: {fileID: 0}
-  P: 0
-  M: 0
-  S: 0
-  D: 0
-  NowM: 0
-  NowS: 0
-  NowD: 0
-  _powerNum: 5
-  _fishingNum: 3
-  _meetNum: 5
-  _golfNum: 3
-  _speedNum: 5
-  _gameNum: 3
-  _defenseNum: 5
-  _cafeNum: 3
 --- !u!224 &1804858562 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2887841363995087905, guid: 75c1dc00b9362e04bbec81afb5890367, type: 3}
@@ -2583,6 +2579,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1810458367452556417, guid: dcdbe8a38b3adaf47ab42a8242a848ff, type: 3}
   m_PrefabInstance: {fileID: 1126087982}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2048474126 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1810458367452556419, guid: dcdbe8a38b3adaf47ab42a8242a848ff, type: 3}
+  m_PrefabInstance: {fileID: 1126087982}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2107597386
 GameObject:
   m_ObjectHideFlags: 0

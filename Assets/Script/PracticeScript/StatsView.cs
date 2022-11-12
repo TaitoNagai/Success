@@ -7,7 +7,6 @@ using UnityEngine.UI;
 [Serializable]
 public class StatsView : MonoBehaviour
 {
-    [SerializeField] GameManager _gameManager = null;
     //テキスト表示
     [SerializeField] Text _powerText; 
     [SerializeField] Text _meetText;
@@ -20,11 +19,18 @@ public class StatsView : MonoBehaviour
         _powerText.text = numPower.ToString();
     }
 
-    private void Update()
+    public void ChangeMeetText(int numMeet)
     {
-        //_powerText.text = _gameManager._powerIndex.ToString();
-        _meetText.text = _gameManager._meetIndex.ToString();
-        _speedText.text = _gameManager._speedIndex.ToString();
-        _defenseText.text = _gameManager._defenseIndex.ToString();
+        _meetText.text = numMeet.ToString();
+    }
+
+    public void ChangeSpeedText(int numSpeed)
+    {
+        _speedText.text = numSpeed.ToString();
+    }
+
+    public void ChangeDefenseText(int numDefense)
+    {
+        _defenseText.text = numDefense.ToString();
     }
 }
