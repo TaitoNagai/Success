@@ -6,10 +6,10 @@ public class StatsButton : MonoBehaviour
 {
     StatsModel _statsModel = new StatsModel();
     [SerializeField] StatsView _statsView;
-    int power = 1;
-    int meet = 1;
-    int speed = 1;
-    int defense = 1;
+    //int power = 1;
+    //int meet = 1;
+    //int speed = 1;
+    //int defense = 1;
 
     private void Start()
     {
